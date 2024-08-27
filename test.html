@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="styles.css" rel="stylesheet" type="text/css">
+  <title>Unikum</title>
+</head>
+<body>
+<header>
+  <!-- Your header content -->
+</header>
+
+<div id="iframeContainer"></div>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const iframeContainer = document.getElementById('iframeContainer');
+    const iframe = document.createElement('iframe');
+    iframe.id = "gameiframe";
+    iframe.src = atob("aHR0cHM6Ly93d3cuY3JhenlnYW1lcy5jb20vZW1iZWQvZmlsbC10aGUtcmlkZ2U=");
+    iframe.allowFullscreen = true;
+    iframe.title = "Getaway Shootout game";
+    iframeContainer.appendChild(iframe);
+  });
+</script>
+</body>
+</html>
